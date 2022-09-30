@@ -17,20 +17,21 @@
         function encrypted()
         {
             var text="india";
-            var code="";
+            let code="";
             var name=document.getElementById("name").value;
             console.log(name);
             for(x=0;x<letters.length;x++)
             {
                 if(x=='105' || x=='110')
                {
-             
                 for (x1  of letters) {
-                    let code = text.charCodeAt(x);
-                    code = letters;
-                    document.getElementById("demo").innerHTML=code;
-                }
+                    let code = text.charAt(0);
+                    code = letters;  
+                }  
             }
+            // document.getElementById("name").innerHTML=code;
+            document.getElementById("demo").innerHTML=name;
+
           
      
         
