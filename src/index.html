@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="name" id="name">
+    <br><br>
+    <button type="button" onclick="encrypted()">clickme</button>
+<p id="demo"></p>
+    <script>
+        let letters = ["a","b","c","d"];
+        
+        function encrypted()
+        {
+            var text="india";
+            var code="";
+            var name=document.getElementById("name").value;
+            console.log(name);
+            for(x=0;x<letters.length;x++)
+            {
+                if(x=='105' || x=='110')
+               {
+             
+                for (x1  of letters) {
+                    let code = text.charCodeAt(x);
+                    code = letters;
+                    document.getElementById("demo").innerHTML=code;
+                }
+            }
+          
+     
+        
+        
+        
+ 
+         
+            }
+          
+        }
+    </script>
+</body>
+</html>
